@@ -1,0 +1,107 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Quadry Azeez</label>
+      <ul>
+        <li><a class="" href="#">Home</a></li>
+        <li><a class="project-link" href="#">Projects</a></li>
+        <li><a href=" https://wa.me/+2349036297450">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <!-- 
+section 1 -->
+
+      <section class="sec-1">
+        <h1 class="header">
+          Hi,<br />
+          I'm <span class="content">Azeez</span><br />
+          Front-End Developer
+        </h1>
+        <button class="btn">
+          <a target="0" href=" https://wa.me/+2349036297450">Contact</a>
+        </button>
+        <br />
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/quadry-azeez-b53277191/"
+          ><ion-icon class="logo" name="logo-linkedin"></ion-icon
+        ></a>
+        <a target="_blank" href="https://twitter.com/yrdauq_zeeza"
+          ><ion-icon class="logo" name="logo-twitter"></ion-icon
+        ></a>
+        <a href="https://github.com/Quadry01"
+          ><ion-icon class="logo" name="logo-github"></ion-icon
+        ></a>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="sec-2">
+        <img class="image" src="images/my_pic.png" alt="Quadry Azeez" />
+      </section>
+    </div>
+
+    <div class="overlay-box">
+      <!-- 
+    Project Display -->
+
+      <section>
+        <div class="display project-div">
+          <ion-icon class="close-btn" name="close-circle-outline"></ion-icon>
+
+          <h3 class="project-header">Projects</h3>
+          <figure>
+            <img class="guess" src="images/guess.png" alt="Guessing game" />
+          </figure>
+          <figcaption class="gcap">
+            <a href="https://quadry01.github.io/Guess-Number/">Guessing game</a>
+          </figcaption>
+
+          <figure>
+            <img
+              class="clean"
+              src="images/clean-it-all.png"
+              alt="Clean it all website"
+            />
+          </figure>
+          <figcaption class="ccap">
+            <a href="https://quadry01.github.io/clean-it-all/"
+              >Clean it all website</a
+            >
+          </figcaption>
+        </div>
+      </section>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
