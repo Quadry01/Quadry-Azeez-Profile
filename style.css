@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   display: fixed;
+  background-color: oldlace;
 }
 nav {
   background: white;
@@ -189,7 +190,7 @@ section {
   }
   label.logo {
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 0;
     margin-left: 10px;
   }
