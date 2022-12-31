@@ -38,11 +38,25 @@ nav ul li a {
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,
-a:hover {
-  text-decoration: underline;
-  background: #1b9bff;
-  transition: 0.5s;
+
+nav ul li a:hover {
+  color: white;
+  background-color: #0082e6;
+}
+.btn-na {
+  color: white;
+}
+.btn-na:hover {
+  color: black;
+}
+
+.prj-link {
+  color: black;
+}
+.btn.active,
+.btn:hover {
+  text-decoration: none;
+  background-color: #0082e6;
 }
 .checkbtn {
   font-size: 30px;
@@ -58,11 +72,16 @@ a:hover {
 }
 @media (max-width: 952px) {
   label.logo {
-    font-size: 30px;
-    padding-left: 50px;
+    font-size: 25px;
+    display: block;
+
+    align-self: center;
+    margin-top: 10px;
   }
+
   nav ul li a {
-    font-size: 16px;
+    /* font-size: 16px; */
+    display: none;
   }
 }
 @media (max-width: 858px) {
@@ -79,6 +98,7 @@ a:hover {
     text-align: center;
     transition: all 0.5s;
   }
+
   nav ul li {
     display: block;
     margin: 50px 0;
@@ -87,15 +107,11 @@ a:hover {
   nav ul li a {
     font-size: 20px;
   }
-  a:hover,
-  a.active {
-    background: none;
-    color: #0082e6;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
 }
+#check:checked ~ ul {
+  left: 0;
+}
+
 section {
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
@@ -112,15 +128,21 @@ section {
   top: 200px;
   z-index: 1;
 }
+
 .btn {
   font-size: 20px;
   width: 100px;
   height: 40px;
   border-radius: 10px;
   border: 0px;
+  margin: 0 5;
   background-color: #0082e6;
   color: white;
   margin-top: 10px;
+}
+
+.rm-btn {
+  visibility: hidden;
 }
 
 .header {
@@ -133,6 +155,7 @@ section {
   font-size: 40px;
   margin-top: 180px;
   margin-left: 10px;
+  color: black;
 }
 
 .image {
@@ -141,10 +164,97 @@ section {
   left: 900;
   top: 200;
 }
-a {
-  text-decoration: none;
-  color: black;
+
+@media (max-width: 952px) {
+  body {
+    padding-top: 0%;
+  }
+  .image {
+    width: 250px;
+    position: unset;
+    margin-bottom: 20% !important;
+    margin-left: 15%;
+  }
+
+  .rm-btn {
+    visibility: visible;
+  }
+
+  .header {
+    text-align: left;
+    font-size: 35px;
+    line-height: 2.5rem;
+    margin-top: 50% !important;
+    margin-bottom: 10%;
+  }
+  label.logo {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .logo {
+    font-size: 30px;
+    margin-top: 30%;
+    margin-right: 5%;
+    color: black;
+  }
+  .prj-sec {
+    width: 100%;
+    align-items: center;
+  }
+
+  .project-div {
+    border-radius: 50px !important;
+    top: 150px !important;
+    background-color: white;
+    height: 50% !important;
+    width: 50% !important;
+    left: 30% !important;
+    padding: 10px !important;
+    align-content: center !important;
+    z-index: 4 !important;
+  }
+
+  .clean {
+    align-items: center !important;
+    width: 50% !important;
+    margin-bottom: 20% !important;
+    left: 25% !important;
+  }
+
+  .guess {
+    align-items: center !important;
+    width: 50% !important;
+    margin-bottom: 20% !important;
+    left: 25% !important;
+  }
+
+  .prj-link2 {
+    position: absolute !important;
+    top: auto !important;
+    left: 25% !important;
+    margin-top: 10% !important;
+    color: black;
+  }
+
+  .prj-link1 {
+    position: absolute !important;
+    top: 42% !important;
+    left: 25% !important;
+    color: rgb(225, 22, 22);
+  }
+
+  .vclose {
+    position: absolute !important;
+    bottom: auto !important;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 27px !important;
+  }
 }
+
 .display {
   display: none;
 }
@@ -211,35 +321,22 @@ body {
   margin-bottom: 30px;
   font-size: larger;
 }
-.ccap {
+.prj-link2 {
   position: absolute;
-  top: 450px;
-  left: 180px;
+  bottom: 8%;
+  left: 40%;
+  color: black;
 }
 
-.gcap {
+.prj-link1 {
   position: absolute;
-  top: 250px;
-  left: 180px;
+  top: 50%;
+  left: 40%;
+  color: black;
 }
 
 .close-btn {
   position: absolute;
-  left: 400px;
+  left: auto;
   font-size: 25px;
 }
-
-/* .sec-1 {
-  text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 10px 50px;
-  line-height: 2rem;
-  position: absolute;
-  top: 200px;
-  z-index: 1;
-} */
-/* span {
-  color: #0082e6;
-  
-} */
