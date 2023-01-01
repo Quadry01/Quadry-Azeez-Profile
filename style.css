@@ -211,8 +211,8 @@ section {
     top: 150px !important;
     background-color: white;
     height: 50% !important;
-    width: 50% !important;
-    left: 30% !important;
+    width: 55% !important;
+    left: 27% !important;
     padding: 10px !important;
     align-content: center !important;
     z-index: 4 !important;
@@ -221,6 +221,7 @@ section {
   .clean {
     align-items: center !important;
     width: 50% !important;
+    margin-top: 150px !important;
     margin-bottom: 20% !important;
     left: 25% !important;
   }
@@ -253,6 +254,12 @@ section {
     margin-top: 5%;
     margin-left: 5%;
     font-size: 27px !important;
+  }
+  .project-header {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    font-size: larger;
   }
 }
 
