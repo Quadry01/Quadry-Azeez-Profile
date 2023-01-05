@@ -1,4 +1,10 @@
 /*font-family: 'Poppins', sans-serif;*/
+html,
+body {
+  padding-top: 0%;
+  overflow: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +12,21 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+.close-logi {
+  display: none;
+}
+.fa-brands {
+  font-size: 50px;
+  margin: 190px 10px;
+  color: black;
+}
+.fa-regular {
+  font-size: 35px;
+  color: rgb(254, 251, 251);
+  margin: 20px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   display: fixed;
@@ -51,9 +72,9 @@ nav ul li a:hover {
   color: black;
 }
 
-.prj-link {
+/* .prj-link {
   color: black;
-}
+} */
 .btn.active,
 .btn:hover {
   text-decoration: none;
@@ -71,20 +92,7 @@ nav ul li a:hover {
 #check {
   display: none;
 }
-@media (max-width: 952px) {
-  label.logo {
-    font-size: 25px;
-    display: block;
 
-    align-self: center;
-    margin-top: 10px;
-  }
-
-  nav ul li a {
-    /* font-size: 16px; */
-    display: none;
-  }
-}
 @media (max-width: 858px) {
   .checkbtn {
     display: block;
@@ -156,116 +164,111 @@ section {
   font-size: 40px;
   margin-top: 180px;
   margin-left: 10px;
-  color: black;
+  color: rgb(238, 15, 15);
 }
 
 .image {
   width: 500px;
   position: absolute;
   left: 900;
-  top: 200;
+  top: 185;
 }
 
 @media (max-width: 952px) {
+  html,
   body {
     padding-top: 0%;
+    overflow: hidden;
   }
-  .image {
-    width: 250px;
-    position: unset;
-    margin-bottom: 20% !important;
-    margin-left: 15%;
-  }
-
-  .rm-btn {
-    visibility: visible;
-  }
-
-  .header {
-    text-align: left;
-    font-size: 35px;
-    line-height: 2.5rem;
-    margin-top: 50% !important;
-    margin-bottom: 10%;
-  }
-  label.logo {
-    width: 100%;
-    font-size: 25px;
-    margin-top: 0;
-    margin-left: 10px;
-  }
-
-  .logo {
-    font-size: 30px;
-    margin-top: 30%;
-    margin-right: 5%;
-    color: black;
-  }
-  .prj-sec {
-    width: 100%;
-    align-items: center;
-  }
-
   .project-div {
+    position: absolute !important;
     border-radius: 50px !important;
     top: 150px !important;
-    background-color: white;
-    height: 50% !important;
+    height: 45% !important;
     width: 55% !important;
-    left: 27% !important;
+    left: 17% !important;
     padding: 10px !important;
-    align-content: center !important;
-    z-index: 4 !important;
+  }
+  #mobile-log {
+    visibility: hidden;
   }
 
-  .clean {
-    align-items: center !important;
-    width: 50% !important;
-    margin-top: 150px !important;
-    margin-bottom: 20% !important;
-    left: 25% !important;
-  }
-
-  .guess {
-    align-items: center !important;
-    width: 50% !important;
-    margin-bottom: 20% !important;
-    left: 25% !important;
-  }
-
-  .prj-link2 {
-    position: absolute !important;
-    top: auto !important;
-    left: 25% !important;
-    margin-top: 10% !important;
-    color: black;
+  nav ul li a {
+    /* font-size: 16px; */
+    display: none;
   }
 
   .prj-link1 {
     position: absolute !important;
     top: 42% !important;
     left: 25% !important;
-    color: rgb(225, 22, 22);
   }
-
-  .vclose {
+  .prj-link2 {
     position: absolute !important;
-    bottom: auto !important;
-    margin-top: 5%;
-    margin-left: 5%;
-    font-size: 27px !important;
+    top: auto !important;
+    left: 20% !important;
+    margin-top: 10% !important;
   }
-  .project-header {
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 20px;
-    font-size: larger;
+
+  .guess {
+    width: 50% !important;
+    left: 25% !important;
+  }
+
+  .clean {
+    width: 50% !important;
+    left: 25% !important;
+    margin-top: 120px !important;
+  }
+  .fa-brands {
+    font-size: 35px;
+    margin: 10px 10px;
+  }
+  .image {
+    width: 200px;
+    position: unset;
+    margin-bottom: 26% !important;
+    margin-left: 15%;
+  }
+
+  .rm-btn {
+    visibility: visible;
+    margin-bottom: 12px;
+  }
+  .header {
+    text-align: left;
+    font-size: 35px;
+    line-height: 2.5rem;
+    margin-top: 30% !important;
+    margin-bottom: 10%;
+  }
+  label.logo {
+    width: 100%;
+    font-size: 100%;
+    margin-top: 0;
+    margin-left: 0px;
+    display: block;
+
+    align-self: center;
+    margin-top: 10px;
   }
 }
 
-.display {
-  display: none;
+.fas {
+  visibility: hidden;
 }
+
+.logo {
+  font-size: 14px;
+  margin-top: 30%;
+  margin-right: 5%;
+  color: black;
+}
+.prj-sec {
+  width: 100%;
+  align-items: center;
+}
+
 .project-div {
   border-radius: 50px;
   top: 150px;
@@ -277,6 +280,17 @@ section {
   padding: 50px;
   align-content: center;
   z-index: 4;
+}
+
+.project-header {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.display {
+  display: none;
 }
 
 .clean {
@@ -324,11 +338,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /*dim the background*/
 }
 
-.project-header {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: larger;
-}
 .prj-link2 {
   position: absolute;
   bottom: 8%;
@@ -341,10 +350,4 @@ body {
   top: 50%;
   left: 40%;
   color: black;
-}
-
-.close-btn {
-  position: absolute;
-  left: auto;
-  font-size: 25px;
 }
