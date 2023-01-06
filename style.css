@@ -2,7 +2,6 @@
 html,
 body {
   padding-top: 0%;
-  overflow: hidden;
 }
 
 * {
@@ -186,7 +185,7 @@ section {
     top: 150px !important;
     height: 45% !important;
     width: 55% !important;
-    left: 17% !important;
+    left: 24% !important;
     padding: 10px !important;
   }
   #mobile-log {
@@ -227,6 +226,7 @@ section {
   .image {
     width: 200px;
     position: unset;
+    margin-top: 2%;
     margin-bottom: 26% !important;
     margin-left: 15%;
   }
