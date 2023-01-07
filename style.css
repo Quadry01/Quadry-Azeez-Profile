@@ -254,6 +254,16 @@ section {
   }
 }
 
+@media (max-width: 858px) {
+  .prj-link2 {
+    margin-top: 15% !important;
+    top: 70% !important;
+  }
+  .project-div {
+    height: 40% !important;
+  }
+}
+
 .fas {
   visibility: hidden;
 }
